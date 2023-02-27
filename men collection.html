@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men Collection | J.</title>
+    <!-- bootsrap cdn  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+    <!-- fonawesome cdn & google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- style.css  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="men collection.css" />
+
+    <!-- responsie .css  -->
+    <link rel="stylesheet" href="responsive home page.css" />
+
+    <link rel="stylesheet" href="men collection responsive.css">
+
+    <!-- slider  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <div class="header">
+      <div class="header-flex">
+        <div class="header-left">
+          <div class="h-l-f">
+            <div class="header-l-p">
+              <p>WELCOME TO J.</p>
+            </div>
+            <div class="header-l-a">
+              <a href="#">Sign in</a>
+              <img src="images/pak-flag.webp" alt="" />
+            </div>
+            <div class="h-l-t-info">
+              <a href="#">Tracking Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="h-r-f">
+            <div class="h-r-icon" onclick="cart()" id="topOn">
+              <i class="fa-solid fa-cart-shopping cart1"></i>
+              <div class="hide-r-i">
+                <p class="cart0">0</p>
+                <!-- <i class="fa-solid fa-0 cart0"></i> -->
+              </div>
+            </div>
+
+            <div class="search-r-main">
+              <div class="h-r-search" onclick="navSearch()">
+                <span>Search</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="h-s-m-n" id="showSearch">
+                <div class="hide-search">
+                  <div class="h-s-f">
+                    <div class="hide-search-inp">
+                      <input
+                        type="search"
+                        name=""
+                        id=""
+                        placeholder="Search Products Here"
+                      />
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-xmark closeNavSearch"
+                    onclick="removeSearchNav()"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar  -->
+    <div class="navbar-main">
+      <div class="logo-nav">
+        <img src="images/new_logo.webp" alt="" />
+      </div>
+      <div class="navbar-flex">
+        <div class="nav-div">
+          <ol class="list">
+            <li class="navLI"><a href="#" class="link-nav">Home</a></li>
+            <li class="navLI">
+              <a href="#" class="link-nav animated">New Arrivals</a>
+              <div class="dd-1">
+                <div class="dd-1-flex">
+                  <div class="dd-1-left">
+                    <div class="dd-1-left-flex">
+                      <div class="dd-1-img">
+                        <img
+                          src="images/nav dd new arrival img 01.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="dd-1-winter">
+                        <h4>Winter 2022</h4>
+                        <ol class="dd-1-list">
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Unstitched Collection</a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK"> Stitched Collection</a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Boys Collection</a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Girls Collection</a>
+                          </li>
+                        </ol>
+                      </div>
+
+                      <div class="dd-1-winter">
+                        <h4>Boys & Girls</h4>
+                        <ol class="dd-1-list">
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Kid Boys</a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK"> Kid Girls</a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Teen Boys </a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Teen Girls </a>
+                          </li>
+                        </ol>
+                      </div>
+
+                      <div class="dd-1-winter">
+                        <h4>
+                          Men Collection <br />
+                          Winter
+                        </h4>
+                        <ol class="dd-1-list">
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Unstitched Collection</a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK"> Stitched Collection</a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK">Shawls </a>
+                          </li>
+                          <li class="ddLI">
+                            <a href="#" class="ddLINK"> Waiscoat</a>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="navLI">
+              <a href="#" class="link-nav">Cast & Crew</a>
+              <div class="dd-2">
+                <div class="dd-3-headings">
+                  <h1 class="men-dd-3-heading">Men's</h1>
+                  <h1 class="women-dd-3-heading">Women's</h1>
+                </div>
+                <div class="dd-2-flex">
+                  <div class="dd-2-men">
+                    <div class="dd-men-left-flex">
+                      <div class="dd-men-img-div">
+                        <img src="images/dd img 03.webp" alt="" />
+                      </div>
+                      <div class="dd-men-content">
+                        <div class="dd-content-flex">
+                          <h2>SHALWAR KAMEEZ</h2>
+                          <h2>Kurta Shalwar</h2>
+                          <ol class="dd-3-list">
+                            <li class="ddLI-3">
+                              <a href="#" class="link-DD-3">Formal</a>
+                            </li>
+                            <li class="ddLI-3">
+                              <a href="#" class="link-DD-3">Semi-Formal</a>
+                            </li>
+                            <li class="ddLI-3">
+                              <a href="#" class="link-DD-3">Casual</a>
+                            </li>
+                            <li class="ddLI-3">
+                              <a href="#" class="link-DD-3">Exclusive</a>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="dd-women-2-main-div">
+                    <div class="dd-women-flex-div">
+                      <div class="dd-women-img-div">
+                        <img src="images/girl dd img 02.webp" alt="" />
+                      </div>
+                      <div class="dd-3-women-content">
+                        <div class="dd-3-women-content-flex">
+                          <h2>Stitched</h2>
+                          <h2>Unstitched</h2>
+                          <ol class="women-dd-3-list">
+                            <li class="dd-3-women-LI">
+                              <a href="#" class="dd-3-women-link">Formal</a>
+                            </li>
+                            <li class="dd-3-women-LI">
+                              <a href="#" class="dd-3-women-link">Kurti</a>
+                            </li>
+                            <li class="dd-3-women-LI">
+                              <a href="#" class="dd-3-women-link">Footwear</a>
+                            </li>
+                            <li class="dd-3-women-LI">
+                              <a href="#" class="dd-3-women-link"
+                                >Accessories</a
+                              >
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="navLI"><a href="#" class="link-nav">Our Store</a></li>
+            <li class="navLI"><a href="#" class="link-nav">About US</a></li>
+            <li class="navLI"><a href="#" class="link-nav">Contact US</a></li>
+          </ol>
+        </div>
+        <div class="mob-icon">
+          <i class="fa-solid fa-bars menu" id="icon-nav"></i>
+          <i class="fa-solid fa-xmark close" id="icon-nav"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- men css simple nav  -->
+    <div class="men-div-nav">
+      <a href="#">Home</a>
+      <a href="#">></a>
+      <a href="#">Men's Collection</a>
+    </div>
+
+    <!-- add to cart  -->
+    <div class="main-cart" id="cart-main">
+      <div class="cart-nav">
+        <div class="cart-flex">
+          <div class="cart-left-icon">
+            <h2>MY BAG</h2>
+          </div>
+          <div class="cart-right-icon">
+            <button onclick="clsCrt()" id="btnCartClose">CLOSE</button>
+          </div>
+        </div>
+        <p class="cart-p">YOU HAVE NO ITEMS IN YOUR SHOPPING BAG.</p>
+      </div>
+    </div>
+
+    <!-- men css top 2 card  -->
+
+    <div class="card-top-kurta-kameez-main-div">
+      <div class="card-top-kurta-kameez-main-div-flex">
+        <!-- card 1 -->
+        <div class="card-1-kameez-div">
+          <div class="card-1-kameez-img-div">
+            <img src="images/men part kammez img 01.webp" alt="" />
+          </div>
+          <div class="hide-card-1-kurta-kameez"></div>
+        </div>
+
+        <!-- card 2 -->
+
+        <div class="card-1-kameez-div">
+          <div class="card-1-kameez-img-div">
+            <img src="images/men kurta img 02.webp" alt="" />
+          </div>
+          <div class="hide-card-1-kurta-kameez"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- simple card  -->
+    <div class="cards-men-footwear-kurta-unstitched-flex-div">
+      <!-- crad - 1 -* -->
+
+      <div class="men-unstitched-card-div">
+        <div class="men-unstitched-card-div-img-div">
+          <img src="images/men unstitched img 01.webp" alt="" />
+        </div>
+        <div class="men-unstitched-card-div-content">
+          <button>UNSTITCHED</button>
+        </div>
+        <div class="men-unstitched-card-div-hide"></div>
+      </div>
+
+      <!-- crad - 2 -* -->
+
+      <div class="men-unstitched-card-div">
+        <div class="men-unstitched-card-div-img-div">
+          <img src="images/men footwear img 01.webp" alt="" />
+        </div>
+        <div class="men-unstitched-card-div-content">
+          <button>FOOTWEAR</button>
+        </div>
+        <div class="men-unstitched-card-div-hide"></div>
+      </div>
+
+      <!-- crad - 3 -* -->
+
+      <div class="men-unstitched-card-div">
+        <div class="men-unstitched-card-div-img-div">
+          <img src="images/men kurta pajama img 01.webp" alt="" />
+        </div>
+        <div class="men-unstitched-card-div-content">
+          <button>KURT PAJAMA</button>
+        </div>
+        <div class="men-unstitched-card-div-hide"></div>
+      </div>
+    </div>
+
+    <!-- men fregnance  -->
+    <div class="men-freg-div-main-flex">
+      <h1>Men's Fregnance</h1>
+      <hr class="hr-men-freg-top" />
+
+      <div class="men-fregnanace-flex-div-cards">
+        <!-- card fregnance 01  -->
+        <div class="fregnance-card-1-div-main">
+          <div class="fregnance-card-1-div-main-img-div">
+            <img src="images/men freg img 001.webp" alt="" />
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="freg()"
+              id="icons-div"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="fregnance-card-1-div-main-content">
+            <a href="#">BLESS</a>
+            <h3>PKR3,500.00</h3>
+          </div>
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card fregnance 2 *=> sale  -->
+        <div class="fregnance-card-2-div-main">
+          <div class="fregnance-card-2-div-main-img-div">
+            <img src="images/men freg img 02.webp" alt="" />
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="freG()"
+              id="icons-div-2"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-2"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-2"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-2"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="fregnance-card-2-div-main-content-flex">
+            <div class="card-2-men-freg-content-1-div">
+              <a href="#">1947 | DIL DIL PAKISTAN </a>
+              <h3>PKR5,865.00</h3>
+              <strike>PKR6,900.00</strike>
+            </div>
+            <div class="card-2-men-freg-content-1-div-btn">
+              <button>15% OFF</button>
+            </div>
+          </div>
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card fregnance 03  -->
+        <div class="fregnance-card-1-div-main">
+          <div class="fregnance-card-1-div-main-img-div">
+            <img src="images/men freg img 03.webp" alt="" />
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="fregThree()"
+              id="icons-div-3"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-3"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-3"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-3"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="fregnance-card-1-div-main-content">
+            <a href="#">CLASSIQUE POUR HOMME</a>
+            <h3>PKR5,500.00</h3>
+          </div>
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card fregnance 4 *=> sale  -->
+        <div class="fregnance-card-2-div-main">
+          <div class="fregnance-card-2-div-main-img-div">
+            <img src="images/men freg img 04.webp" alt="" />
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="fregFour()"
+              id="icons-div-4"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-4"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-4"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-4"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="fregnance-card-2-div-main-content-flex">
+            <div class="card-2-men-freg-content-1-div">
+              <a href="#">Super-Star-Pour-Homme </a>
+              <h3>PKR4,960.00</h3>
+              <strike>PKR6,200.00</strike>
+            </div>
+            <div class="card-2-men-freg-content-1-div-btn">
+              <button>20% OFF</button>
+            </div>
+          </div>
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card fregnance 05  -->
+        <div class="fregnance-card-1-div-main">
+          <div class="fregnance-card-1-div-main-img-div">
+            <img src="images/men freg img 05.webp" alt="" />
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="fregFive()"
+              id="icons-div-5"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-5"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-5"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-5"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="fregnance-card-1-div-main-content">
+            <a href="#">PARIS Pour Homme </a>
+            <h3>PKR1,450.00</h3>
+          </div>
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- men tradional part  -->
+    <div class="men-trad-main-div-card-flex">
+      <div class="content-top-men-trad-flex">
+        <div class="men-trad-heading-top">
+          <h1>MEN'S TRADIONAL</h1>
+        </div>
+        <div class="men-trad-hr-top">
+          <hr class="hr-men-freg-top" />
+        </div>
+      </div>
+
+      <div class="men-tradional-flex-div-for-cards">
+        <!-- card - 1 - men tradional  -->
+        <div class="men-tradional-card-01-div">
+          <div class="men-tradional-card-01-img-div">
+            <img src="images/men trad img hide 01.webp" alt="" />
+            <div class="men-tradional-card-01-hide-img-div">
+              <img src="images/men trad img 01.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="fregTradMen()"
+              id="icons-div-men-tard-1"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icons-div-men-tard-inp"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="icons-div-men-tard-show"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="icons-div-men-tard-hide"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-div-flex">
+            <div class="men-tradional-card-01-content-flex-01-div">
+              <a href="#">emerald-green-blended-kurta-jjk-a-34281</a>
+              <h2>PKR2,373.00</h2>
+              <strike>PKR3,390.00</strike>
+            </div>
+            <div class="men-tradional-card-01-content-btn">
+              <p>30% OFF</p>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-sizes">
+            <button><span>L</span></button>
+          </div>
+
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card - 02 - men tradional  -->
+        <div class="men-tradional-card-01-div">
+          <div class="men-tradional-card-01-img-div">
+            <img src="images/men trad hide img 02.webp" alt="" />
+            <div class="men-tradional-card-01-hide-img-div">
+              <img src="images/men trad img 02.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick=""
+              id="icons-div-men-tard"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icons-div-men-trad-2"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="icons-div-men-trad-2"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="icons-div-men-trad-2"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-div-flex">
+            <div class="men-tradional-card-01-content-flex-01-div">
+              <a href="#">Cotton-Light-Yellow-kurta-jjk-a-34281</a>
+              <h2>PKR2,373.00</h2>
+              <strike>PKR3,390.00</strike>
+            </div>
+            <div class="men-tradional-card-01-content-btn">
+              <p>15% OFF</p>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-sizes">
+            <button><span>S</span></button>
+            <button><span>L</span></button>
+            <button><span>XL</span></button>
+          </div>
+
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card - 03 - men tradional  -->
+        <div class="men-tradional-card-01-div">
+          <div class="men-tradional-card-01-img-div">
+            <img src="images/men trad img 03 new.webp" alt="" />
+            <div class="men-tradional-card-01-hide-img-div">
+              <img src="images/men trad hide img 03 new.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick=""
+              id="icons-div-men-tard-1"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icons-div-men-tard-inp-3"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="icons-div-men-tard-show-3"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="icons-div-men-tard-hide-3"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-div-flex">
+            <div class="men-tradional-card-01-content-flex-01-div">
+              <a href="#">Emerald blue Blended Kurta | JJK-A-34281 </a>
+              <h2>PKR2,373.00</h2>
+              <strike>PKR3,390.00</strike>
+            </div>
+            <div class="men-tradional-card-01-content-btn">
+              <p>30% OFF</p>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-sizes">
+            <button><span>M</span></button>
+            <button><span>L</span></button>
+          </div>
+
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card - 04 - men tradional  -->
+        <div class="men-tradional-card-01-div">
+          <div class="men-tradional-card-01-img-div">
+            <img src="images/men trad img 04.webp" alt="" />
+            <div class="men-tradional-card-01-hide-img-div">
+              <img src="images/men trad img hide 04.webp " alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick=""
+              id="icons-div-men-tard-1"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icons-div-men-tard-inp-4"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="icons-div-men-tard-show-4"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="icons-div-men-tard-hide-4"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-div-flex">
+            <div class="men-tradional-card-01-content-flex-01-div">
+              <a href="#">Cotton-Light-Yellow-kurta-jjk-a-34281</a>
+              <h2>PKR2,373.00</h2>
+              <strike>PKR3,390.00</strike>
+            </div>
+            <div class="men-tradional-card-01-content-btn">
+              <p>15% OFF</p>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-sizes">
+            <button><span>S</span></button>
+            <button><span>M</span></button>
+            <button><span>L</span></button>
+          </div>
+
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card - 05 - men tradional  -->
+        <div class="men-tradional-card-01-div">
+          <div class="men-tradional-card-01-img-div">
+            <img src="images/men trad img 05.webp" alt="" />
+            <div class="men-tradional-card-01-hide-img-div">
+              <img src="images/men trad hide img 05.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick=""
+              id="icons-div-men-tard-5"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icons-div-men-tard-inp-5"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="icons-div-men-tard-show-5"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="icons-div-men-tard-hide-5"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-div-flex">
+            <div class="men-tradional-card-01-content-flex-01-div">
+              <a href="#">Black-kurta-jjk-a-34281</a>
+              <h2>PKR2,373.00</h2>
+              <strike>PKR3,390.00</strike>
+            </div>
+            <div class="men-tradional-card-01-content-btn">
+              <p>20% OFF</p>
+            </div>
+          </div>
+          <div class="men-tradional-card-01-content-sizes">
+            <button><span>S</span></button>
+            <button><span>M</span></button>
+            <button><span>XL</span></button>
+          </div>
+
+          <div class="fregnance-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- simple 2 card  -->
+
+    <div class="card-top-waiscoat-main-div">
+      <div class="card-top-waiscoat-main-div-flex">
+        <!-- card 1 -->
+        <div class="card-1-waiscoat-div">
+          <div class="card-1-waiscoat-img-div">
+            <img src="images/men trad waiscoat img 01 main.webp" alt="" />
+          </div>
+          <div class="hide-card-1-kurta-kameez"></div>
+          <div class="card-1-waiscoat-hide-btn-div">
+            <button>Formal Waiscoat</button>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+
+        <div class="card-1-waiscoat-div">
+          <div class="card-1-waiscoat-img-div">
+            <img src="images/men wedding waiscoat img 02.webp" alt="" />
+          </div>
+          <div class="hide-card-1-kurta-kameez"></div>
+          <div class="card-1-waiscoat-hide-btn-div">
+            <button>Wedding Waiscoat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- men caps  -->
+
+    <div class="men-caps-div-main-flex">
+      <div class="content-top-men-trad-flex">
+        <div class="men-trad-heading-top">
+          <h1>CAP'S</h1>
+        </div>
+        <div class="men-trad-hr-top">
+          <hr class="hr-men-freg-top" />
+        </div>
+      </div>
+
+      <div class="card-cap-flex-div-two">
+        <!-- card 01 cap  -->
+        <div class="card-01-cap-main-div">
+          <div class="card-01-cap-main-img-div">
+            <img src="images/men cap img 01.webp" alt="" />
+            <div class="card-01-cap-main-hide-img-div">
+              <img src="images/men cap img hide 01.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="capF()"
+              id="icons-div"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-cap"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-cap"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-cap"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <a href="#" class="card-01-cap-anchor"
+            >BROWN BLENDED MEN CAP | JJ-CAP-0005-R48
+          </a>
+          <div class="card-01-cap-main-content-div-flex">
+            <div class="card-01-cap-div-content-01">
+              <h2>PKR1,592.00</h2>
+              <strike>PKR1,990.00</strike>
+            </div>
+            <div class="card-01-cap-div-content-02">
+              <button>20% OFF</button>
+            </div>
+          </div>
+          <div class="men-cap-card-01-content-sizes">
+            <button><span>S</span></button>
+            <button><span>L</span></button>
+          </div>
+
+          <div class="cap-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card 02 cap  -->
+        <div class="card-01-cap-main-div">
+          <div class="card-01-cap-main-img-div">
+            <img src="images/men cap img 02.webp" alt="" />
+            <div class="card-01-cap-main-hide-img-div">
+              <img src="images/men cap hide img 02.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="capF()"
+              id="icons-div"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-cap"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-cap"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-cap"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <a href="#" class="card-01-cap-anchor"
+            >Bluish BLENDED MEN CAP | JJ-CAP-0005-R48
+          </a>
+          <div class="card-01-cap-main-content-div-flex">
+            <div class="card-01-cap-div-content-01">
+              <h2>PKR1,592.00</h2>
+              <strike>PKR1,990.00</strike>
+            </div>
+            <div class="card-01-cap-div-content-02">
+              <button>20% OFF</button>
+            </div>
+          </div>
+          <div class="men-cap-card-01-content-sizes">
+            <button><span>M</span></button>
+            <button><span>L</span></button>
+          </div>
+
+          <div class="cap-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card 03 cap  -->
+        <div class="card-01-cap-main-div">
+          <div class="card-01-cap-main-img-div">
+            <img src="images/men cap img 03.webp" alt="" />
+            <div class="card-01-cap-main-hide-img-div">
+              <img src="images/men cap hide img 03.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="capF()"
+              id="icons-div"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-cap"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-cap"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-cap"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <a href="#" class="card-01-cap-anchor"
+            >White BLENDED MEN CAP | JJ-CAP-0005-R48
+          </a>
+          <div class="card-01-cap-main-content-div-flex">
+            <div class="card-01-cap-div-content-01">
+              <h2>PKR1,592.00</h2>
+              <strike>PKR1,990.00</strike>
+            </div>
+            <div class="card-01-cap-div-content-02">
+              <button>20% OFF</button>
+            </div>
+          </div>
+          <div class="men-cap-card-01-content-sizes">
+            <button><span>S</span></button>
+            <button><span>L</span></button>
+          </div>
+
+          <div class="cap-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card 04 cap  -->
+        <div class="card-01-cap-main-div">
+          <div class="card-01-cap-main-img-div">
+            <img src="images/men cap img 04.webp" alt="" />
+            <div class="card-01-cap-main-hide-img-div">
+              <img src="images/men cap hide img 04.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="capF()"
+              id="icons-div"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-cap"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-cap"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-cap"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <a href="#" class="card-01-cap-anchor"
+            >Blue BLENDED MEN CAP | JJ-CAP-0005-R48
+          </a>
+          <div class="card-01-cap-main-content-div-flex">
+            <div class="card-01-cap-div-content-01">
+              <h2>PKR1,592.00</h2>
+              <strike>PKR1,990.00</strike>
+            </div>
+            <div class="card-01-cap-div-content-02">
+              <button>20% OFF</button>
+            </div>
+          </div>
+          <div class="men-cap-card-01-content-sizes">
+            <button><span>S</span></button>
+            <button><span>L</span></button>
+          </div>
+
+          <div class="cap-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+
+        <!-- card 05 cap  -->
+        <div class="card-01-cap-main-div">
+          <div class="card-01-cap-main-img-div">
+            <img src="images/men cap img 05.webp" alt="" />
+            <div class="card-01-cap-main-hide-img-div">
+              <img src="images/men cap hide img 05.webp" alt="" />
+            </div>
+            <div
+              class="fregnance-card-1-div-main-img-ion-wish-list"
+              onclick="capF()"
+              id="icons-div"
+            >
+              <input
+                type="password"
+                name=""
+                class="inputs-freg"
+                id="icon-input-cap"
+              />
+              <i
+                class="fa-regular fa-heart heart-1 show-heart"
+                id="heart-show-cap"
+                title="Add To Wish List"
+              ></i>
+              <i
+                class="fa-solid fa-heart heart-1 hidden-heart"
+                id="heart-hide-cap"
+                title="Add To Wish List"
+              ></i>
+            </div>
+          </div>
+          <a href="#" class="card-01-cap-anchor"
+            >Mahroon BLENDED MEN CAP | JJ-CAP-0005-R48
+          </a>
+          <div class="card-01-cap-main-content-div-flex">
+            <div class="card-01-cap-div-content-01">
+              <h2>PKR1,592.00</h2>
+              <strike>PKR1,990.00</strike>
+            </div>
+            <div class="card-01-cap-div-content-02">
+              <button>20% OFF</button>
+            </div>
+          </div>
+          <div class="men-cap-card-01-content-sizes">
+            <button><span>M</span></button>
+            <button><span>L</span></button>
+          </div>
+
+          <div class="cap-card-1-div-main-content-hide">
+            <button>ADD TO CART</button>
+            <button>BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /* footer email subscription  */ -->
+
+  <div class="footer-sub-main">
+    <div class="footer-sub-main-flex">
+      <div class="footer-flex-content">
+        <h2>BE THE FIRST</h2>
+        <p>
+          New arrivals. Exclusive previews. First access to sales. <br />
+          Sign up to stay in the know.
+        </p>
+      </div>
+      <div class="email-footer-sub-flex">
+        <div class="email-footer-sub-main-flex">
+          <form action="" name="FormFooter" onsubmit="return FooterEmailerror()">
+            <div class="email-footer-sub-div" id="emailFooterDiv">
+              <input type="email" name="eml" id="emailFooterDiv" placeholder="Enter A Email Address"
+                autocomplete="off" />
+              <!-- pattern="[A-Za-z]*" -->
+            </div>
+            <div class="p-error-div-footer-sub">
+              <p class="p-error-footer" id="errorFooterEmail">
+                *This Field is a required
+              </p>
+            </div>
+        </div>
+        <div class="btn-sub-div">
+          <button class="footer-sub-btn">
+            SIGN UP
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- last footer  -->
+  <div class="last-footer-main-div">
+    <div class="last-footer-flex-div">
+      <div class="last-footer-left-div">
+        <h2>NEED HELP?</h2>
+        <p><a class="top-footer-a" href="tel: +92 21 111 112 111">+92 21 111 112 111</a> (9am - 10pm , Mon - Sat)
+        </p>
+        <a class="top-footer-a" href="mailto:junaidjamshed@hotmail.com">eshop@junaidjamshed.com</a>
+      </div>
+
+      <div class="footer-center-nav-footer">
+        <h2>CUSTOMER SERVICE
+        </h2>
+        <ol class="list-footer">
+          <li class="li-footer"><a href="#" class="link-footer">Contact Us
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Delivery & Orders
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Returns & Exchanges
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Terms & Conditions
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Privacy Policy
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Track My Order
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Payment Guide
+
+            </a></li>
+        </ol>
+      </div>
+
+      <div class="footer-center-2-nav-footer">
+        <h2>COMPANY
+
+        </h2>
+        <ol class="list-footer">
+          <li class="li-footer"><a href="#" class="link-footer">About Us
+
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Careers
+
+            </a></li>
+          <li class="li-footer"><a href="#" class="link-footer">Store locator
+
+            </a></li>
+        </ol>
+      </div>
+
+      <div class="footer-right-icons">
+        <h2>CONTACT US</h2>
+        <div class="footer-right-icon-flex">
+          <div class="icons-footer">
+            <!-- <i class="fa-brands fa-facebook-f footer-icons fb"></i> -->
+            <i class="bi bi-meta footer-icons fb " title="Meta"></i>
+          </div>
+          <div class="icons-footer"><i class="fa-brands fa-whatsapp footer-icons wA" title="Whatsapp"></i>
+          </div>
+          <div class="icons-footer"><i class="fa-brands fa-youtube footer-icons yt" title="YouTube"></i></div>
+        </div>
+        <div class="footer-right-icon-flex">
+          <div class="icons-footer"><i class="fa-brands fa-linkedin-in footer-icons lI" title="Linkedin"></i>
+          </div>
+          <div class="icons-footer"><i class="fa-brands fa-twitter footer-icons tw" title="Twitter"></i> </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    <!-- javascript  -->
+
+    <script src="basic home page.js"></script>
+  </body>
+</html>

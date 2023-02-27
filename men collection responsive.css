@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 420px) {
+    .card-top-kurta-kameez-main-div-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-1-kameez-div {
+        width: 75%;
+        margin: 25px 0;
+        height: 85vh;
+        border: 1px solid darkgray;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+    /* men stitched  */
+
+    .cards-men-footwear-kurta-unstitched-flex-div {
+        width: 100%;
+        position: relative;
+        margin: 50px 0;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0 45px;
+    }
+
+    /* card 1  */
+
+    .men-unstitched-card-div {
+        position: relative;
+        width: 92%;
+        height: 55vh;
+        border: 1px solid gray;
+        cursor: pointer;
+        margin: 15px 0;
+    }
+
+    .men-unstitched-card-div-img-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .men-unstitched-card-div-img-div img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    /* .men-unstitched-card-div-img-div img:hover {
+        transform: scale(0);
+        opacity: 1;
+    } */
+
+    .men-unstitched-card-div-content {
+        position: absolute;
+        top: 280px;
+        left: 75px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .men-unstitched-card-div-content button {
+        padding: 8px;
+        cursor: pointer;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    .men-unstitched-card-div-content button:hover {
+        background: black;
+        color: white;
+        border: 1px solid gray;
+    }
+
+    /* men collection fregnance  */
+
+    .men-freg-div-main-flex {
+        margin: 10px 0;
+    }
+
+    .men-fregnanace-flex-div-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 0 0 0 50px;
+    }
+
+    .men-freg-div-main-flex h1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 30px 4px 0 4px;
+        font-family: "Alata", sans-serif !important;
+        color: black;
+    }
+
+    .hr-men-freg-top {
+        border-color: gold;
+        margin: 5px 0 35px 50px;
+        width: 75%;
+    }
+
+    /* card 1 fregnanace  */
+
+    .fregnance-card-1-div-main {
+        position: relative;
+        width: 85%;
+        height: 66vh;
+        transition: all 0.4s ease;
+        border: 1px solid white;
+        margin: 15px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fregnance-card-1-div-main-img-div {
+        width: 70%;
+        height: 74%;
+        position: absolute;
+    }
+
+    .fregnance-card-1-div-main-img-div img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+
+    /* fregnace card 2 */
+    .fregnance-card-2-div-main {
+        position: relative;
+        width: 85%;
+        height: 66vh;
+        transition: all 0.4s ease;
+        border: 1px solid white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fregnance-card-2-div-main-img-div {
+        width: 80%;
+        height: 66%;
+        position: absolute;
+    }
+
+    .fregnance-card-2-div-main-img-div img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .fregnance-card-2-div-main-content-flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 60px;
+        width: 100%;
+    }
+
+    /* <!-- men tradional part  -->  */
+
+    .men-trad-main-div-card-flex {
+        margin: 50px 0;
+    }
+
+    .men-tradional-flex-div-for-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0 0 0 53px;
+
+    }
+
+    .content-top-men-trad-flex h1 {
+        font-size: 25px;
+        text-align: center;
+        padding: 30px 4px 0 4px;
+        font-family: "Alata", sans-serif !important;
+        color: black;
+    }
+
+    .content-top-men-trad-flex hr {
+        border-color: gold;
+        width: 90%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .men-trad-hr-top {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 10px 0;
+    }
+
+    .men-tradional-card-01-div {
+        border: 1px solid white;
+        position: relative;
+        width: 85%;
+        height: 86vh;
+        background-color: white;
+        cursor: pointer;
+
+        margin: 18px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+
+
+    /* waiscoast  */
+
+    .card-top-waiscoat-main-div {
+        margin: 50px 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .card-top-waiscoat-main-div-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .card-1-waiscoat-div {
+        width: 85%;
+        height: 85vh;
+        border: 1px solid darkgray;
+        position: relative;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 18px 0;
+    }
+
+
+    /* caps part css  */
+
+    .men-caps-div-main-flex {
+        margin: 30px 0;
+    }
+
+    .card-cap-flex-div-two {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0 0 0 47px;
+    }
+
+
+    /* card 01 cap  */
+    .card-01-cap-main-div {
+        position: relative;
+        width: 80%;
+        height: 68vh;
+        border: 1px solid white;
+        background-color: white;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        overflow: hidden;
+
+        margin: 15px 10px;
+    }
+}

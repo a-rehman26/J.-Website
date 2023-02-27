@@ -1,0 +1,789 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.men-div-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    position: relative;
+    background: #232329;
+    padding: 0 25px;
+}
+
+.men-div-nav a {
+    padding: 0 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* cards  */
+
+.card-top-kurta-kameez-main-div {
+    margin: 50px 0;
+    width: 100%;
+    position: relative;
+}
+
+.card-top-kurta-kameez-main-div-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card-1-kameez-div {
+    width: 36%;
+    height: 85vh;
+    border: 1px solid darkgray;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-1-kameez-img-div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-1-kameez-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.hide-card-1-kurta-kameez {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 0 lightgray;
+    transition: all 0.6s ease;
+}
+
+.card-1-kameez-div:hover .hide-card-1-kurta-kameez {
+    box-shadow: inset 0 0 400px 0 lightgray;
+}
+
+/* men stitched  */
+
+.cards-men-footwear-kurta-unstitched-flex-div {
+    width: 100%;
+    position: relative;
+    margin: 50px 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 0 0 98px;
+}
+
+/* card 1  */
+
+.men-unstitched-card-div {
+    position: relative;
+    width: 78%;
+    height: 55vh;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.men-unstitched-card-div-img-div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.men-unstitched-card-div-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* .men-unstitched-card-div:hover .men-unstitched-card-div-img-div img {
+    transform: scale(1.1);
+    opacity: 0.9;
+} */
+
+.men-unstitched-card-div-img-div img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.men-unstitched-card-div-content {
+    position: absolute;
+    top: 250px;
+    left: 102px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.men-unstitched-card-div-content button {
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.men-unstitched-card-div-content button:hover {
+    background: black;
+    color: white;
+    border: 1px solid gray;
+}
+
+/* men collection fregnance  */
+
+.men-freg-div-main-flex {
+    margin: 10px 0;
+}
+
+.men-fregnanace-flex-div-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 0 0 20px;
+}
+
+.men-freg-div-main-flex h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 4px 0 4px;
+    font-family: "Alata", sans-serif !important;
+    color: black;
+}
+
+.hr-men-freg-top {
+    border-color: gold;
+    margin: 5px 0 35px 20px;
+    width: 97%;
+}
+
+/* card 1 fregnanace  */
+
+.fregnance-card-1-div-main {
+    position: relative;
+    width: 92%;
+    height: 66vh;
+    transition: all 0.4s ease;
+    border: 1px solid white;
+}
+
+.fregnance-card-1-div-main-img-div {
+    width: 100%;
+    height: 74%;
+    position: absolute;
+}
+
+.fregnance-card-1-div-main-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.fregnance-card-1-div-main-img-ion-wish-list {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.heart-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hidden-heart {
+    display: none;
+}
+
+.inputs-freg {
+    display: none;
+}
+
+.show-heart {
+    color: #232329;
+}
+
+.fregnance-card-1-div-main-content {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+}
+
+.fregnance-card-1-div-main-content a {
+    text-align: left !important;
+    font-size: 13px !important;
+    color: #000 !important;
+    text-transform: none;
+    text-decoration: none;
+    padding: 5px 0 5px 15px;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+}
+
+.fregnance-card-1-div-main-content a:hover {
+    text-decoration: underline;
+}
+
+.fregnance-card-1-div-main-content h3 {
+    text-align: center;
+    padding: 10px 4px;
+    font-size: 1.3rem;
+    color: #1d1f21;
+    font-family: "Alata", sans-serif;
+}
+
+.fregnance-card-1-div-main-content-hide {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fregnance-card-1-div-main-content-hide button {
+    width: 112px;
+    height: 38px;
+    padding: 7px;
+    cursor: pointer;
+    background-color: white;
+    color: #000;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    border: 1px solid gray;
+    margin: 2px 0;
+}
+
+.fregnance-card-1-div-main-content-hide button:hover {
+    background: black;
+    color: white;
+    border: 1px solid lightgray;
+}
+
+.fregnance-card-1-div-main:hover {
+    border: 1px solid darkgray;
+    box-shadow: 0 0 14px 0 black;
+}
+
+.fregnance-card-1-div-main:hover .fregnance-card-1-div-main-content-hide {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* fregnace card 2 */
+.fregnance-card-2-div-main {
+    position: relative;
+    width: 92.5%;
+    height: 66vh;
+    transition: all 0.4s ease;
+    border: 1px solid white;
+}
+
+.fregnance-card-2-div-main-img-div {
+    width: 100%;
+    height: 66%;
+    position: absolute;
+}
+
+.fregnance-card-2-div-main-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.fregnance-card-2-div-main-content-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+}
+
+.card-2-men-freg-content-1-div a {
+    text-align: left !important;
+    font-size: 13px !important;
+    color: #000 !important;
+    text-transform: none;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+}
+
+.card-2-men-freg-content-1-div a:hover {
+    text-decoration: underline;
+}
+
+.card-2-men-freg-content-1-div h3 {
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    color: red;
+    font-family: "Alata", sans-serif;
+}
+
+.card-2-men-freg-content-1-div strike {
+    color: black;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+}
+
+.card-2-men-freg-content-1-div-btn button {
+    padding: 3px;
+    background: red;
+    color: white;
+    border: 1px solid brown;
+    font-weight: bold;
+    cursor: text;
+}
+
+.fregnance-card-2-div-main-content-hide button:hover {
+    background: black;
+    color: white;
+    border: 1px solid lightgray;
+}
+
+.fregnance-card-2-div-main:hover {
+    border: 1px solid darkgray;
+    box-shadow: 0 0 14px 0 black;
+}
+
+.fregnance-card-2-div-main:hover .fregnance-card-1-div-main-content-hide {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* <!-- men tradional part  -->  */
+
+.men-trad-main-div-card-flex {
+    margin: 50px 0;
+}
+
+.men-tradional-flex-div-for-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 0 0 53px;
+
+}
+
+.content-top-men-trad-flex h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 4px 0 4px;
+    font-family: "Alata", sans-serif !important;
+    color: black;
+}
+
+.content-top-men-trad-flex hr {
+    border-color: gold;
+    width: 90%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.men-trad-hr-top {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+.men-tradional-card-01-div {
+    border: 1px solid white;
+    position: relative;
+    width: 85%;
+    height: 86vh;
+    background-color: white;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+
+.men-tradional-card-01-img-div {
+    position: relative;
+    width: 92%;
+    height: 65%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.men-tradional-card-01-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.men-tradional-card-01-hide-img-div {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.men-tradional-card-01-img-div:hover .men-tradional-card-01-hide-img-div {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.men-tradional-card-01-content-div-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 96px;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.men-tradional-card-01-content-flex-01-div a {
+    text-align: left !important;
+    font-size: 13px !important;
+    color: #000 !important;
+    text-decoration: none;
+    padding: 5px 0px;
+    font-family: "Alata", sans-serif;
+    font-weight: 6 00;
+    text-transform: capitalize;
+}
+
+.men-tradional-card-01-content-flex-01-div a:hover {
+    text-decoration: underline;
+}
+
+.men-tradional-card-01-content-flex-01-div h2 {
+    padding: 5px 0px;
+    font-size: 1.3rem;
+    color: red;
+    font-family: "Alata", sans-serif;
+}
+
+.card-2-men-freg-content-1-div strike {
+    color: black;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+}
+
+.men-tradional-card-01-content-btn p {
+    padding: 3px;
+    background: red;
+    color: white;
+    border: 1px solid brown;
+    font-weight: bold;
+    cursor: text;
+    width: 78px;
+}
+
+.men-tradional-card-01-content-sizes {
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+    margin: 2px 0;
+}
+
+.men-tradional-card-01-content-sizes button {
+    margin: 2px 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.men-tradional-card-01-div:hover .fregnance-card-1-div-main-content-hide {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fregnance-card-2-div-main-content-hide button:hover {
+    background: black;
+    color: white;
+    border: 1px solid lightgray;
+}
+
+.men-tradional-card-01-div:hover {
+    border: 1px solid darkgray;
+    box-shadow: 0 0 14px 0 black;
+}
+
+
+/* waiscoast  */
+
+.card-top-waiscoat-main-div {
+    margin: 50px 0;
+    width: 100%;
+    position: relative;
+}
+
+.card-top-waiscoat-main-div-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card-1-waiscoat-div {
+    width: 36%;
+    height: 85vh;
+    border: 1px solid darkgray;
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-1-waiscoat-img-div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-1-waiscoat-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.hide-card-1-kurta-kameez {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 0 lightgray;
+    transition: all 0.6s ease;
+}
+
+.hide-card-1-kurta-kameez:hover {
+    box-shadow: inset 0 0 400px 0 lightgray;
+}
+
+.card-1-waiscoat-hide-btn-div {
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.card-1-waiscoat-hide-btn-div button {
+    width: 148px;
+    height: 44px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px;
+    background-color: #000;
+    color: white;
+    transition: all 0.4s ease;
+    border: 1px solid gray;
+}
+
+.card-1-waiscoat-hide-btn-div button:hover {
+    color: gold;
+}
+
+/* caps part css  */
+
+.men-caps-div-main-flex {
+    margin: 30px 0;
+}
+
+.card-cap-flex-div-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 0 0 60px;
+}
+
+
+/* card 01 cap  */
+.card-01-cap-main-div {
+    position: relative;
+    width: 80%;
+    height: 66vh;
+    border: 1px solid white;
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+    margin: 15px 10px;
+}
+
+.card-01-cap-main-img-div {
+    width: 80%;
+    height: 58%;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.card-01-cap-main-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.card-01-cap-main-hide-img-div {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    width: 80%;
+    height: 58%;
+
+}
+
+.card-01-cap-main-hide-img-div:hover {
+    opacity: 1;
+}
+
+.card-01-cap-main-hide-img-div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.card-01-cap-main-content-div-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card-01-cap-anchor {
+    text-align: left !important;
+    font-size: 13px !important;
+    color: #000 !important;
+    text-decoration: none;
+    padding: 5px 12px;
+    font-family: "Alata", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card-01-cap-anchor:hover {
+    text-decoration: underline;
+}
+
+.card-01-cap-div-content-01 h2 {
+    padding: 5px 0px;
+    font-size: 1.3rem;
+    color: red;
+    font-family: "Alata", sans-serif;
+}
+
+
+.card-01-cap-div-content-01 strike {
+    color: black;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+}
+
+
+.card-01-cap-div-content-02 button {
+    padding: 3px;
+    background: red;
+    color: white;
+    border: 1px solid brown;
+    font-weight: bold;
+    cursor: text;
+    width: 78px;
+}
+
+.men-cap-card-01-content-sizes {
+    text-align: left;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.men-cap-card-01-content-sizes button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+    background-color: #f0f0f0;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.cap-card-1-div-main-content-hide button {
+    width: 112px;
+    height: 38px;
+    padding: 7px;
+    cursor: pointer;
+    background-color: white;
+    color: #000;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    border: 1px solid gray;
+    margin: 2px 0;
+}
+
+.cap-card-1-div-main-content-hide button:hover {
+    background: black;
+    color: white;
+    border: 1px solid lightgray;
+}
+
+.cap-card-1-div-main-content-hide {
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-01-cap-main-div:hover .cap-card-1-div-main-content-hide {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.card-01-cap-main-div:hover {
+    border: 1px solid darkgray;
+    box-shadow: 0 0 14px 0 black;
+}

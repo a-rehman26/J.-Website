@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>star</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <style>
+      body {
+        display: flex;
+        cursor: pointer;
+      }
+
+      .str {
+        color: gold;
+        display: none;
+      }
+
+      input {
+        display: none;
+      }
+
+      .hstr {
+        color: black;
+      }
+
+      .icon {
+        position: relative;
+      }
+
+      .hide-i {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input type="password" name="" id="inp" />
+    <div class="icon" id="icon" onclick=" c()">
+      <i class="fa-solid fa-star str" id="ic"></i>
+      <div class="hide-i">
+        <i class="fa-regular fa-star hstr" id="hide-c"></i>
+      </div>
+    </div>
+
+    <script>
+      let i1 = document.getElementById("ic");
+      let i2 = document.getElementById("hide-c");
+      let input = document.getElementById("inp");
+
+      function c() {
+        if (input.type === "password") {
+          input.type = "text";
+          i1.style.display = "block";
+          i2.style.display = "none";
+        } else {
+          input.type = "password";
+          i1.style.display = "none";
+          i2.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
